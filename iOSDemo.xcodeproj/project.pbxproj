@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		A95726601CF1B1BD00D25B04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A957265F1CF1B1BD00D25B04 /* main.m */; };
 		A95726631CF1B1BD00D25B04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A95726621CF1B1BD00D25B04 /* AppDelegate.m */; };
-		A95726661CF1B1BD00D25B04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95726651CF1B1BD00D25B04 /* ViewController.m */; };
 		A95726691CF1B1BD00D25B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95726671CF1B1BD00D25B04 /* Main.storyboard */; };
 		A957266B1CF1B1BD00D25B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A957266A1CF1B1BD00D25B04 /* Assets.xcassets */; };
 		A95726791CF1B1BD00D25B04 /* iOSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95726781CF1B1BD00D25B04 /* iOSDemoTests.m */; };
 		A95726841CF1B1BD00D25B04 /* iOSDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95726831CF1B1BD00D25B04 /* iOSDemoUITests.m */; };
+		A95726931CF1BDB700D25B04 /* DTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95726921CF1BDB700D25B04 /* DTTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		A957265F1CF1B1BD00D25B04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A95726611CF1B1BD00D25B04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A95726621CF1B1BD00D25B04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A95726641CF1B1BD00D25B04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A95726651CF1B1BD00D25B04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A95726681CF1B1BD00D25B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A957266A1CF1B1BD00D25B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A957266F1CF1B1BD00D25B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		A957267F1CF1B1BD00D25B04 /* iOSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95726831CF1B1BD00D25B04 /* iOSDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSDemoUITests.m; sourceTree = "<group>"; };
 		A95726851CF1B1BD00D25B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95726911CF1BDB700D25B04 /* DTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTabBarViewController.h; sourceTree = "<group>"; };
+		A95726921CF1BDB700D25B04 /* DTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +101,12 @@
 			children = (
 				A95726611CF1B1BD00D25B04 /* AppDelegate.h */,
 				A95726621CF1B1BD00D25B04 /* AppDelegate.m */,
-				A95726641CF1B1BD00D25B04 /* ViewController.h */,
-				A95726651CF1B1BD00D25B04 /* ViewController.m */,
 				A95726671CF1B1BD00D25B04 /* Main.storyboard */,
 				A957266A1CF1B1BD00D25B04 /* Assets.xcassets */,
 				A957266F1CF1B1BD00D25B04 /* Info.plist */,
 				A957265E1CF1B1BD00D25B04 /* Supporting Files */,
+				A95726911CF1BDB700D25B04 /* DTTabBarViewController.h */,
+				A95726921CF1BDB700D25B04 /* DTTabBarViewController.m */,
 			);
 			path = iOSDemo;
 			sourceTree = "<group>";
@@ -266,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A95726661CF1B1BD00D25B04 /* ViewController.m in Sources */,
 				A95726631CF1B1BD00D25B04 /* AppDelegate.m in Sources */,
 				A95726601CF1B1BD00D25B04 /* main.m in Sources */,
+				A95726931CF1BDB700D25B04 /* DTTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +488,7 @@
 				A957268A1CF1B1BD00D25B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A957268B1CF1B1BD00D25B04 /* Build configuration list for PBXNativeTarget "iOSDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				A957268D1CF1B1BD00D25B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A957268E1CF1B1BD00D25B04 /* Build configuration list for PBXNativeTarget "iOSDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				A95726901CF1B1BD00D25B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

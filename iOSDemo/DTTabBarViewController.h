@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DTTabBarViewController.h
 //  iOSDemo
 //
 //  Created by jintao on 16/5/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DTTabBarViewController : UITabBarController
 
 @end
-

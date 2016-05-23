@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "DTTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,10 @@
     // 创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [[ViewController alloc] init];
+    
+    DTTabBarViewController *tabBarVC = [[DTTabBarViewController alloc] init];
+    self.window.rootViewController = tabBarVC;
+    
     [self.window makeKeyAndVisible];
     
     return YES;
